@@ -1,0 +1,25 @@
+fastapi
+uvicorn
+websockets
+python-dotenv
+httpx
+numpy
+sounddevice
+
+# Speech-to-text
+deepgram-sdk
+
+# Text-to-speech
+cartesia
+azure-cognitiveservices-speech
+
+# LLM orchestration
+langchain
+langchain-openai
+langchain-community
+langchain-groq
+langchain-anthropic
+langchain-ollama
+
+# Telephony
+audiosocket

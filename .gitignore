@@ -1,0 +1,61 @@
+# ── Python ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# ── Virtual environments ────────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Secrets — NEVER commit ──────────────────────────────────────────────
+.env
+.env.*
+*.env
+appsetting.json
+appsettings.json
+service-account*.json
+credentials*.json
+*.pem
+*.key
+
+# The redacted template IS committed
+!appsetting.example.json
+
+# ── Runtime data (contains real customer conversations / PII) ───────────
+transcripts/
+dispositions/
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Logs ────────────────────────────────────────────────────────────────
+*.log
+logs/
+server_out.log
+server_err.log
+
+# ── Audio test fixtures ─────────────────────────────────────────────────
+*.wav
+*.mp3
+*.ogg
+*.raw
+
+# ── Local backup copies ─────────────────────────────────────────────────
+* - Copy.py
+
+# ── IDE / OS ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# ── Testing ─────────────────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml

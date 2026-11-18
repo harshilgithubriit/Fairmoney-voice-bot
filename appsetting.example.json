@@ -1,0 +1,69 @@
+{
+  "Server": {
+    "FastAgiHost": "0.0.0.0",
+    "FastAgiPort": 4573,
+    "AudioSocketHost": "0.0.0.0",
+    "AudioSocketPort": 9092,
+    "AudioSocketAdvertisedHost": "192.168.0.100",
+    "MaxConcurrentCalls": 100
+  },
+  "ApiEndpoints": {
+    "DispositionApiUrl": "http://localhost:9002/api/api/CallBOTInput",
+    "PaymentLinkBaseUrl": "https://pay.example.com/mock/",
+    "CrmTimeoutSecs": 3.0,
+    "EnableCrmPush": true
+  },
+  "AiServices": {
+    "Deepgram": {
+      "ApiKey": "YOUR_DEEPGRAM_API_KEY"
+    },
+    "Groq": {
+      "ApiKey": "YOUR_GROQ_API_KEY",
+      "Model": "openai/gpt-oss-120b",
+      "Temperature": 0.2,
+      "MaxTokens": 250
+    },
+    "TtsEngine": "azure",
+    "Azure": {
+      "SpeechKey": "YOUR_AZURE_SPEECH_KEY",
+      "SpeechRegion": "centralindia",
+      "VoiceName": "en-NG-EzinneNeural"
+    },
+    "Cartesia": {
+      "ApiKey": "YOUR_CARTESIA_API_KEY"
+    }
+  },
+  "BusinessRules": {
+    "MaxCallDurationSecs": 300,
+    "MaxPaymentDateDays": 4,
+    "DaysWindowMode": "calendar",
+    "TransferQueue": "agent",
+    "BusyPlaybackAudio": "/usr/TECKINFO/BUSY",
+    "PostWaitSecs": 2,
+    "UseMockLoanData": false
+  },
+  "Audio": {
+    "SampleRate": 8000,
+    "AudioSource": "socket",
+    "AudioQueueMax": 2840,
+    "GracefulShutdownSecs": 2.0
+  },
+  "Storage": {
+    "DatabasePath": "fairmoney_calls.db",
+    "DatabaseTimeoutSecs": 30.0,
+    "LogsDir": "logs",
+    "TranscriptsDir": "transcripts",
+    "DispositionsDir": "dispositions"
+  },
+  "Logging": {
+    "Level": "INFO",
+    "RetentionDays": 30,
+    "DisableQuickEdit": true
+  },
+  "AsteriskAmi": {
+    "Host": "192.168.0.10",
+    "Port": 5038,
+    "Username": "YOUR_AMI_USERNAME",
+    "Secret": "YOUR_AMI_SECRET"
+  }
+}
